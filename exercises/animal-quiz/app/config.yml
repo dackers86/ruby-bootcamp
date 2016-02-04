@@ -1,0 +1,34 @@
+AllCops:
+  TargetRubyVersion: 2.2
+  Exclude:
+    - 'Rakefile'
+    - 'db/**/*'
+    - 'lib/config.rb'
+    - 'lib/scheduler/mailer.rb'
+Documentation:
+  Enabled: false
+Metrics/LineLength:
+  Enabled: false
+Style/NumericLiterals:
+  MinDigits: 100000
+RegexpLiteral:
+  Enabled: false
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+  SupportedStyles:
+  - single_quotes
+  - double_quotes
+Style/WordArray:
+  MinSize: 10
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+  EnforcedStyle: single_quotes
+  SupportedStyles:
+  - single_quotes
+  - double_quotes
+Lint/EndAlignment:
+  AlignWith: variable
+ModuleLength:
+  Exclude:
+    - 'lib/interactions/campaign/base.rb'

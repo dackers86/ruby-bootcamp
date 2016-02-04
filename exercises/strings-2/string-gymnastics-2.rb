@@ -1,4 +1,4 @@
-price_list = "orange = 10p apple = 20p bread = £1.10 tomato = 25p cereal = £2.34"
+require_relative 'shopping_bill'
 
 shopping_list = <<-LIST
  list
@@ -13,6 +13,15 @@ shopping_list = <<-LIST
  tomato
 LIST
 
-# Given the following price list and shopping
-# list print out the total cost of the shopping
-# list in pounds and pence
+
+shopping_bill = ShoppingBill.new(shopping_list)
+
+p shopping_bill.message
+
+
+
+
+
+
+
+
